@@ -1,5 +1,9 @@
-var Message = require('./message.model');
-class ImageMessage extends Message {
+// importando sem nome difinido M (pode ser qq valor)
+// import M from './message.model';
+// importando com nome defindo
+import Message from './message.model';
+
+export default class ImageMessage extends Message {
   constructor(text = '', created = Date.now(),
     url = '', thumbnail = '') {
     super(text, created);
@@ -17,5 +21,3 @@ class ImageMessage extends Message {
            `- Thumbnail: ${this.thumbnail}`;
   }
 }
-
-module.exports = ImageMessage;

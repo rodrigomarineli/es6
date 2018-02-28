@@ -1,3 +1,5 @@
+// exportando com nome definido
+// export class Message {
 class Message {
   constructor(text = '', created = Date.now()) {
     this.text = text;
@@ -24,4 +26,5 @@ class Message {
   }
 }
 
-module.exports = Message;
+// default é usado para exportar sem nome definido
+export default Message;
