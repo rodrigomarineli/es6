@@ -34,4 +34,5 @@ messagesService.messages.then((messages) => {
   }
 }).catch((err) => {
   console.log(err);
+  console.log(err);
 });
